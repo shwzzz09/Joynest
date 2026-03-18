@@ -1,0 +1,177 @@
+<a href="https://wa.me/919876543210" class="whatsapp-float">💬</a>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>JoyNest | Surprise Event Booking</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">JoyNest</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/booking">Book</a>
+        <a href="https://wa.me/919876543210" target="_blank">Contact</a>
+    </div>
+</nav>
+
+<!-- TOP BANNER -->
+<div class="top-banner">
+    ✨ Book Beautiful Surprise Decorations for Every Occasion
+    <span class="call">📞 Call / WhatsApp: +91 98765 43210</span>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <h1>JoyNest <span class="tagline">- Making every moment magical ✨</span></h1>
+
+    <img class="hero-image" src="{{ url_for('static', filename='images/decor1.jpg') }}">
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Create Beautiful Surprise Moments</h2>
+    <p>Book decorations for birthdays, anniversaries and proposals</p>
+    <a href="/booking">Book Now</a>
+</section>
+
+<!-- SEARCH -->
+<section class="search-section">
+    <h2>Find Your Perfect Surprise</h2>
+    <form action="/booking">
+        <select>
+            <option>Choose a surprise...</option>
+            <option>Birthday Decoration</option>
+            <option>Romantic Proposal</option>
+            <option>Anniversary Decoration</option>
+            <option>Kids Birthday Party</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<!-- POPULAR -->
+<div class="section-box">
+    <h2>Popular Surprise Setups</h2>
+    <div class="popular-grid">
+        <div class="popular-card">
+            <img src="{{ url_for('static', filename='images/birthday.jpg') }}">
+            <p>Birthday Decoration</p>
+        </div>
+        <div class="popular-card">
+            <img src="{{ url_for('static', filename='images/proposal.jpg') }}">
+            <p>Romantic Proposal</p>
+        </div>
+        <div class="popular-card">
+            <img src="{{ url_for('static', filename='images/anniversary.jpg') }}">
+            <p>Anniversary Decoration</p>
+        </div>
+        <div class="popular-card">
+            <img src="{{ url_for('static', filename='images/kids.jpg') }}">
+            <p>Kids Birthday Party</p>
+        </div>
+    </div>
+</div>
+
+<!-- WHY -->
+<div class="section-box">
+    <h2>Why Choose JoyNest</h2>
+    <div class="why-grid">
+        <div class="why-card">
+            <h3>🎉 Premium Decorations</h3>
+            <p>Beautiful themed decorations for birthdays and proposals.</p>
+        </div>
+        <div class="why-card">
+            <h3>⏰ On Time Setup</h3>
+            <p>Everything ready before the surprise begins.</p>
+        </div>
+        <div class="why-card">
+            <h3>💖 Custom Surprises</h3>
+            <p>Unique decorations tailored for your celebration.</p>
+        </div>
+        <div class="why-card">
+            <h3>⭐ Trusted Service</h3>
+            <p>Hundreds of happy customers trust JoyNest.</p>
+        </div>
+    </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section-box">
+    <h2>What Our Customers Say</h2>
+    <div class="review-grid">
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Best birthday surprise ever!</p>
+            <b>- Aisha</b>
+        </div>
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>The proposal setup was magical.</p>
+            <b>- Rahul</b>
+        </div>
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Highly professional service.</p>
+            <b>- Priya</b>
+        </div>
+    </div>
+</div>
+
+<!-- DECOR -->
+<div class="section-box">
+    <h2>Our Decorations</h2>
+    <div class="decor-grid">
+        <img src="{{ url_for('static', filename='images/decor1.jpg') }}">
+        <img src="{{ url_for('static', filename='images/decor2.jpg') }}">
+        <img src="{{ url_for('static', filename='images/decor3.jpg') }}">
+        <img src="{{ url_for('static', filename='images/decor4.jpg') }}">
+    </div>
+</div>
+
+<!-- ✅ FOOTER (NOW CORRECT POSITION) -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>JoyNest</h3>
+            <p>Making every moment magical ✨</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Services</h4>
+            <p>Birthday</p>
+            <p>Anniversary</p>
+            <p>Proposal</p>
+            <p>Baby Shower</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Cities</h4>
+            <p>Bangalore</p>
+            <p>Chennai</p>
+            <p>Hyderabad</p>
+            <p>Mumbai</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a><br>
+            <p>Email: joynest@email.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 JoyNest. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>

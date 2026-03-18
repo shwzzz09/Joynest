@@ -1,0 +1,122 @@
+
+<a href="https://wa.me/919876543210" class="whatsapp-float">
+    💬
+    </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking Confirmed | JoyNest</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+.success-container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:80vh;
+}
+
+.success-card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+width:450px;
+text-align:center;
+animation:fadeIn 0.8s ease;
+}
+
+.success-title{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.success-sub{
+color:#555;
+margin-bottom:25px;
+}
+
+.booking-details{
+text-align:left;
+margin-top:20px;
+}
+
+.booking-details p{
+margin:8px 0;
+font-size:16px;
+}
+
+.home-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#6c63ff;
+color:white;
+border-radius:25px;
+text-decoration:none;
+margin-right:10px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+border-radius:25px;
+text-decoration:none;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+    <div class="success-box">
+
+<div class="success-container">
+
+<div class="success-card">
+
+<h2 class="success-title">🎉 Booking Confirmed!</h2>
+
+<p class="success-sub">
+Thank you for choosing JoyNest. Your surprise setup has been booked.
+</p>
+
+<div class="booking-details">
+    
+
+<p><strong>Name:</strong> {{ name }}</p>
+<p><strong>Email:</strong> {{ email }}</p>
+<p><strong>Phone:</strong> {{ phone }}</p>
+<p><strong>Event:</strong> {{ event }}</p>
+<p><strong>Date:</strong> {{ date }}</p>
+<p><strong>Location:</strong> {{ location }}</p>
+
+</div>
+
+<a href="/" class="home-btn">Back to Home</a>
+
+<a href="https://wa.me/919876543210" class="whatsapp-btn">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

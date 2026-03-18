@@ -1,0 +1,120 @@
+
+<a href="https://wa.me/919876543210" class="whatsapp-float">
+    💬
+    </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JoyNest Booking</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<script>
+function selectEvent(eventName){
+document.getElementById("event").value = eventName;
+document.getElementById("booking-form").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</head>
+
+<body>
+
+<h1 class="booking-title">Choose Your Surprise Setup</h1>
+
+<div class="packages">
+
+<div class="package-box">
+<img src="{{ url_for('static', filename='images/birthday.jpg') }}">
+<h2>Birthday Decoration</h2>
+<p class="price">₹2999</p>
+<button class="book-btn" onclick="selectEvent('Birthday Decoration')">Book Now</button>
+</div>
+
+<div class="package-box">
+<img src="{{ url_for('static', filename='images/proposal.jpg') }}">
+<h2>Romantic Proposal Setup</h2>
+<p class="price">₹4999</p>
+<button class="book-btn" onclick="selectEvent('Romantic Proposal Setup')">Book Now</button>
+</div>
+
+<div class="package-box">
+<img src="{{ url_for('static', filename='images/anniversary.jpg') }}">
+<h2>Anniversary Decoration</h2>
+<p class="price">₹3999</p>
+<button class="book-btn" onclick="selectEvent('Anniversary Decoration')">Book Now</button>
+</div>
+
+<div class="package-box">
+<img src="{{ url_for('static', filename='images/kids.jpg') }}">
+<h2>Kids Birthday Party</h2>
+<p class="price">₹2799</p>
+<button class="book-btn" onclick="selectEvent('Kids Birthday Party')">Book Now</button>
+</div>
+
+<div class="package-box">
+<img src="{{ url_for('static', filename='images/babyshower.jpg') }}">
+<h2>Baby Shower Decoration</h2>
+<p class="price">₹3499</p>
+<button class="book-btn" onclick="selectEvent('Baby Shower Decoration')">Book Now</button>
+</div>
+
+<div class="package-box">
+<img src="{{ url_for('static', filename='images/candlelight.jpg') }}">
+<h2>Candlelight Dinner Setup</h2>
+<p class="price">₹4599</p>
+<button class="book-btn" onclick="selectEvent('Candlelight Dinner Setup')">Book Now</button>
+</div>
+
+</div>
+
+
+<div id="booking-form" class="booking-form-container">
+
+<h2>Complete Your Booking</h2>
+
+<form action="/success" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input 
+type="tel" 
+name="phone" 
+placeholder="Phone Number"
+pattern="[0-9]{10}"
+maxlength="10"
+title="Please enter a valid 10-digit phone number"
+required>
+
+<select name="event" id="event" required>
+<option>Select Event Type</option>
+<option>Birthday Decoration</option>
+<option>Romantic Proposal Setup</option>
+<option>Anniversary Decoration</option>
+<option>Kids Birthday Party</option>
+<option>Baby Shower Decoration</option>
+<option>Candlelight Dinner Setup</option>
+</select>
+
+<input type="date" name="date" required>
+
+<select name="location" required>
+<option>Select Location</option>
+<option>Bangalore</option>
+<option>Chennai</option>
+<option>Hyderabad</option>
+<option>Mumbai</option>
+<option>Delhi</option>
+<option>Pune</option>
+</select>
+
+<button type="submit" class="confirm-btn">Confirm Booking</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
